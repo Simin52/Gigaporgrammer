@@ -1,11 +1,11 @@
 # Привет!
-Меня зовут Александр 👋
-Стеки: Shell, Powershell, Python, C.
+Меня зовут Семён 👋
+Стеки: Windows/Unix
 
-Являюсь начинающим программистом.
+Начинающий программист.
 
 ## Навигация
-- [Основы редактирования текста](Main/text.md)
-- [Markdown](Main/markdown.md)
-- [Mermaid](Main/mermaid.md)
-- [Task mermaid](Main/task_mermaid.md)
+- [Основы редактирования текста](Base/text.md)
+- [Markdown](Base/markdown.md)
+- [Mermaid](Base/mermaid.md)
+- [Task mermaid](Base/task_mermaid.md)
