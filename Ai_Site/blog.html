@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — Мир периферии</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="Логотип" width="36" height="36">
+      <span>Мир периферии</span>
+    </a>
+    <button class="burger" aria-label="Меню" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О проекте</a></li>
+        <li><a href="blog.html" class="active">Блог</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Сменить тему">🌙</button>
+  </header>
+
+  <main class="container">
+    <h1>Блог</h1>
+
+    <!-- Поиск по контенту (2-я функция localStorage: сохранение последнего запроса) -->
+    <form class="search" onsubmit="return false;">
+      <input id="searchInput" type="search" placeholder="Поиск по статьям…" aria-label="Поиск">
+    </form>
+
+    <div class="posts">
+      <article class="post" data-title="механическая клавиатура hot-swap">
+        <h2>Обзор механической клавиатуры с hot-swap</h2>
+        <p class="meta">10 октября 2026 · Клавиатуры</p>
+        <p>Что такое hot-swap, зачем он нужен и какие свитчи выбрать для работы и игр.</p>
+      </article>
+
+      <article class="post" data-title="беспроводная мышь топ-5">
+        <h2>Топ-5 беспроводных мышей до 3000 ₽</h2>
+        <p class="meta">5 октября 2026 · Мыши</p>
+        <p>Подборка моделей с хорошим сенсором, эргономикой и временем автономной работы.</p>
+      </article>
+
+      <article class="post" data-title="oled монитор стоит ли">
+        <h2>OLED-мониторы: стоит ли переплачивать?</h2>
+        <p class="meta">28 сентября 2026 · Мониторы</p>
+        <p>Плюсы и минусы OLED, выгорание пикселей и сценарии использования.</p>
+      </article>
+
+      <article class="post" data-title="наушники микрофон для работы">
+        <h2>Наушники и микрофон для удалённой работы</h2>
+        <p class="meta">20 сентября 2026 · Аудио</p>
+        <p>Как выбрать гарнитуру, чтобы вас хорошо слышали на созвонах.</p>
+      </article>
+    </div>
+    <p id="noResults" hidden>Ничего не найдено.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Мир периферии. Учебный проект.</p>
+    <p><a href="contact.html">Обратная связь</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

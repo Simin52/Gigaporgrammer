@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Мир периферии</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="Логотип" width="36" height="36">
+      <span>Мир периферии</span>
+    </a>
+    <button class="burger" aria-label="Меню" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О проекте</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="contact.html" class="active">Контакты</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Сменить тему">🌙</button>
+  </header>
+
+  <main class="container">
+    <h1>Контакты</h1>
+    <p>Есть вопрос или предложение? Напишите нам.</p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        Имя
+        <input type="text" name="name" required minlength="2" placeholder="Ваше имя">
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required placeholder="you@example.com">
+      </label>
+      <label>
+        Сообщение
+        <textarea name="message" rows="5" required minlength="10" placeholder="Ваше сообщение…"></textarea>
+      </label>
+      <button class="btn" type="submit">Отправить</button>
+      <p id="formStatus" role="status"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Мир периферии. Учебный проект.</p>
+    <p><a href="contact.html">Обратная связь</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
